@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banned Vehicles - SFRU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'custom-teal': '#5dcccc',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #000;
+        background-image: url('https://i.imgur.com/P1jaTTr.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        overflow-x: hidden;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(8px);
+        z-index: -1;
+      }
+      #navbar {
+        background-color: rgba(17, 24, 39, 0.8);
+        backdrop-filter: blur(5px);
+        @apply fixed top-4 left-1/2 -translate-x-1/2 max-w-2xl rounded-xl shadow-lg;
+      }
+    </style>
+</head>
+<body class="font-sans text-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="p-4 w-full z-50">
+        <div class="container mx-auto flex justify-center items-center space-x-6">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+                <img src="https://i.imgur.com/lZ3hc3Q.png" alt="Logo" class="h-10 w-auto rounded-full">
+            </a>
+            <!-- Nav Links -->
+            <div class="flex items-center space-x-6">
+                <a href="index.html#home" class="text-gray-100 hover:text-custom-teal transition duration-300">Home</a>
+                <a href="https://discord.gg/PG5v8D45j6" target="_blank" class="text-gray-100 hover:text-custom-teal transition duration-300">Discord</a>
+                <a href="index.html#team" class="text-gray-100 hover:text-custom-teal transition duration-300">Team</a>
+                <a href="#" class="text-custom-teal transition-all duration-300">BVE List</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-20 px-6 sm:py-32 md:py-40 text-center">
+        <div class="container mx-auto relative z-10">
+            <h1 class="text-4xl sm:text-6xl font-extrabold mb-8 leading-tight text-custom-teal">Banned Vehicles List</h1>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                This is a list of all vehicles that are currently banned from being used in the server.
+            </p>
+
+            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 max-w-3xl mx-auto text-left">
+                <h4 id="coupe" class="text-lg font-semibold mb-2 text-custom-teal">Coupe</h4>
+                <ul class="list-disc list-inside text-gray-400 mb-6 pl-5 space-y-2">
+                    <li>2022 Fard Mustang GT</li>
+                    <li>2022 Chavy Corvette</li>
+                    <li>2021 Chavy Camaro 2SS</li>
+                    <li>2018 Dodje Challenger Deemon</li>
+                    <li>2020 Pohrse 911 Carrera 4S</li>
+                    <li>2018 Chavy Camaro ZL1 1LE</li>
+                    <li>2019 Chavy Corvette ZO6</li>
+                    <li>2013 Fard Mustang GT500 Super Snake</li>
+                    <li>2011 Hibiscus Evora S</li>
+                    <li>2022 Dodje Challenger Badcat Redeye Widebody</li>
+                    <li>2019 Hibiscus 33-Eleven</li>
+                    <li>2017 Aero Nomad Tactical</li>
+                </ul>
+
+                <h4 id="hatchback" class="text-lg font-semibold mb-2 text-custom-teal pt-10">Hatchback</h4>
+                <ul class="list-disc list-inside text-gray-400 mb-6 pl-5 space-y-2">
+                    <li>2022 Owdi RS 3 Sportback</li>
+                </ul>
+
+                <h4 id="suv" class="text-lg font-semibold mb-2 text-custom-teal pt-10">SUV</h4>
+                <ul class="list-disc list-inside text-gray-400 mb-6 pl-5 space-y-2">
+                    <li>2021 Dodje Durango SRT Badcat</li>
+                    <li>2009 Hammer H3 Limousine</li>
+                    <li>1988 Toyoto 4Runner</li>
+                    <li>2023 Toyoto Sequoia TRD-Pro</li>
+                </ul>
+
+                <h4 id="sedan" class="text-lg font-semibold mb-2 text-custom-teal pt-10">Sedan</h4>
+                <ul class="list-disc list-inside text-gray-400 mb-6 pl-5 space-y-2">
+                    <li>2020 Dodje Charger Badcat Widebody</li>
+                    <li>2019 Mauraci-Mailbach Pullman</li>
+                    <li>2022 Pohrse Taycan Turbo S</li>
+                </ul>
+
+                <h4 id="super" class="text-lg font-semibold mb-2 text-custom-teal pt-10">Super</h4>
+                <ul class="list-disc list-inside text-gray-400 mb-6 pl-5 space-y-2">
+                    <li>2020 McFaren GT</li>
+                    <li>2017 Axura NSX</li>
+                    <li>2016 Faurai F12</li>
+                    <li>2023 Pohrse 911 Turbo S</li>
+                    <li>2010 Xynvo ST1</li>
+                    <li>2015 Furai 458 Italia</li>
+                    <li>2019 Furai Portofino</li>
+                    <li>2021 Furai F8 Tribute</li>
+                    <li>2005 Fard GT</li>
+                    <li>2018 Pohrse 911 GT3RS</li>
+                    <li>2022 Pohrse 911 GT3</li>
+                    <li>2022 Pohrse 911 GT3 Touring</li>
+                    <li>2020 Fard GT</li>
+                    <li>2017 Dodje Viper SRT</li>
+                    <li>2013 Esperanaza GTA Spano</li>
+                    <li>2010 LUF CTR-3</li>
+                    <li>2020 McFaren Senna</li>
+                    <li>2015 BMC Mono</li>
+                    <li>2013 Lateraam Seven 62OR</li>
+                    <li>2013 CTM X-Bow R</li>
+                    <li>2010 Dodje Viper SRT-10</li>
+                    <li>1998 Dodje Viper GTS</li>
+                    <li>2007 Salane S7</li>
+                    <li>2021 Atone Mira Vantage</li>
+                    <li>2011 Aristo M600</li>
+                    <li>2012 Pohrse 911 GT2 RS</li>
+                    <li>2017 McFaren 570GT</li>
+                    <li>2016 McFaren 65OS</li>
+                    <li>2015 McFaren 657LT</li>
+                    <li>2020 McFaren 600LT</li>
+                    <li>2016 McFaren 65OS Spider</li>
+                    <li>2022 Furai SF90 Staradale</li>
+                    <li>2023 Pohrse 911 GT3 RS</li>
+                </ul>
+                
+                <p class="text-gray-500 text-sm mt-4">Note: This list is subject to change. Please check the Discord server for the most up-to-date information.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        <div class="flex justify-center space-x-4 mb-2">
+            <a href="https://discord.gg/PG5v8D45j6" target="_blank" class="text-gray-400 hover:text-custom-teal transition-colors duration-300">Discord Server</a>
+            <a href="bve-list.html" class="text-gray-400 hover:text-custom-teal transition-colors duration-300">Banned Vehicles</a>
+        </div>
+        <p>&copy; 2025 Southwest Florida Roleplay Unity. All rights reserved</p>
+    </footer>
+
+</body>
+</html>

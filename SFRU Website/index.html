@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southwest Florida Roleplay Unity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'custom-teal': '#5dcccc',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #000;
+        background-image: url('https://i.imgur.com/P1jaTTr.png'); /* Using a static image as a placeholder for the animated one */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        overflow-x: hidden;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(8px);
+        z-index: -1;
+      }
+      #navbar {
+        background-color: rgba(17, 24, 39, 0.8);
+        backdrop-filter: blur(5px);
+        @apply fixed top-4 left-1/2 -translate-x-1/2 max-w-2xl rounded-xl shadow-lg;
+      }
+      .vignette-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0px 0px 150px rgba(0,0,0,0.9);
+      }
+    </style>
+</head>
+<body class="font-sans text-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="p-4 w-full z-50">
+        <div class="container mx-auto flex justify-center items-center space-x-6">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center">
+                <img src="https://i.imgur.com/lZ3hc3Q.png" alt="Logo" class="h-10 w-auto rounded-full">
+            </a>
+            <!-- Nav Links -->
+            <div class="flex items-center space-x-6">
+                <a href="#home" class="text-gray-100 hover:text-custom-teal transition duration-300">Home</a>
+                
+                <a href="#team" class="text-gray-100 hover:text-custom-teal transition duration-300">Team</a>
+                <a href="bve-list.html" target="_blank" class="text-gray-100 hover:text-custom-teal transition-all duration-300">
+                    BVE List
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative py-20 px-6 sm:py-32 md:py-40">
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl sm:text-6xl font-extrabold mb-8 leading-snug">
+                <span class="text-white">Southwest Florida</span><br />
+                <span class="text-custom-teal">Roleplay Unity</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                A friendly and dedicated community offering the best roleplaying experiences in Southwest Florida Beta on ROBLOX.
+            </p>
+            <a href="https://discord.gg/PG5v8D45j6" target="_blank" class="bg-custom-teal text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-teal-300 transition-all duration-300 transform hover:scale-105 inline-block">
+                Join Our Discord
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-16 sm:py-24 px-6 relative text-center">
+    <div class="relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-custom-teal">About Us</h2>
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
+            At SFRU, we are more than just a server; we are a family of passionate roleplayers committed to providing a fun and immersive environment. Our team is dedicated to creating unique and memorable experiences, from large-scale events to daily roleplay scenarios. We value our community and are constantly working to improve and evolve based on your feedback.
+        </p>
+        <div class="max-w-xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+                <h3 class="text-xl font-semibold text-custom-teal mb-2">Dedicated Staff</h3>
+                <p class="text-gray-400">Our team is committed to ensuring a fun, fair, and immersive experience for all players.</p>
+            </div>
+            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+                <h3 class="text-xl font-semibold text-custom-teal mb-2">Engaging Events</h3>
+                <p class="text-gray-400">Join us for unique server-wide events and roleplay scenarios that keep things exciting.</p>
+            </div>
+            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+                <h3 class="text-xl font-semibold text-custom-teal mb-2">Vibrant Community</h3>
+                <p class="text-gray-400">Connect with fellow roleplayers and build friendships in our welcoming and active Discord server.</p>
+            </div>
+            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+                <h3 class="text-xl font-semibold text-custom-teal mb-2">Continuous Development</h3>
+                <p class="text-gray-400">We're always working to improve the server and add new features based on member feedback.</p>
+            </div>
+            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+                <h3 class="text-xl font-semibold text-custom-teal mb-2">Custom Bot</h3>
+                <p class="text-gray-400">Our custom bot helps manage the server and provides unique features for a better in-game experience.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="py-16 sm:py-24 px-6 relative text-center">
+    <div class="relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-custom-teal">Our Team</h2>
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
+            Meet the dedicated individuals who help make this community run smoothly and ensure a great experience for everyone.
+        </p>
+        <div class="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+            <!-- Team Member 1 (Faz) -->
+            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 flex flex-col items-center text-center">
+                <img src="https://cdn.discordapp.com/avatars/795915156097597460/c03a5ddb2cb7b9b1a31ccc8091e8e4db?size=1024" alt="Faz" class="rounded-full w-32 h-32 object-cover mb-4 border-4 border-custom-teal">
+                <h4 class="text-xl font-semibold mb-1">Faz</h4>
+                <p class="text-sm text-gray-400">(@not_faz)</p>
+                <div class="bg-gray-200/50 text-gray-100 text-xs font-semibold rounded-md px-2 py-1 mt-1">
+                    <span class="text-white">@</span>Server Owner
+                </div>
+                <p class="text-gray-400 mt-2 text-sm">Passionately developed this website and grew the community to where it is now..</p>
+            </div>
+            <!-- Team Member 2 (Ben) -->
+            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 flex flex-col items-center text-center">
+                <img src="https://cdn.discordapp.com/avatars/908693675444412456/7c39623d46f436290285a76193648d8a?size=1024" alt="Ben" class="rounded-full w-32 h-32 object-cover mb-4 border-4 border-custom-teal">
+                <h4 class="text-xl font-semibold mb-1">Ben</h4>
+                <p class="text-sm text-gray-400">(@swfl21beast)</p>
+                <div class="bg-custom-teal/50 text-custom-teal text-xs font-semibold rounded-md px-2 py-1 mt-1">
+                    <span class="text-custom-teal">@</span>Co Owner
+                </div>
+                <p class="text-gray-400 mt-2 text-sm">Helps to ensure a safe and realistic experience for everyone at SFRU.</p>
+                <p class="text-gray-400 text-sm">He also developed the custom SFRU bot.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 text-center text-gray-500 text-sm">
+    <div class="flex justify-center space-x-4 mb-2">
+        <a href="https://discord.gg/PG5v8D45j6" target="_blank" class="text-gray-400 hover:text-custom-teal transition-colors duration-300">Discord Server</a>
+        <a href="bve-list.html" class="text-gray-400 hover:text-custom-teal transition-colors duration-300">Banned Vehicles</a>
+    </div>
+    <p>&copy; 2025 Southwest Florida Roleplay Unity. All rights reserved</p>
+</footer>
+
+</body>
+</html>
